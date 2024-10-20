@@ -1,0 +1,425 @@
+*{   
+    margin: 0;
+    padding: 0;    
+}
+
+body{
+    background-color: #1c1c1c;
+    font-family: 'Farsan', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    color: white; 
+         
+}
+
+/* infos superiores */
+ .infos {    
+    background-color: black;
+    display: flex;     
+}
+.end, .tel, .hora, .texto {
+    align-items: center;  
+    margin: auto 10px; 
+    justify-content: center; 
+    font-size: 20px;
+} 
+
+/* header */
+.logo {
+    font-size: 60px;
+}
+
+.nome-logo {
+    color: white;
+}
+
+ul li a {
+    font-size: 25px;
+    color: white!important;   
+     
+}
+ul li a:hover {    
+    color: #fe0000!important;    
+}
+
+.banner {
+    height: 710px;    
+    padding-top: 60px;
+}
+
+.pelicula {
+    position: absolute;
+    background-color: #49434162;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;    
+};
+
+/* cardapio */
+h1{
+    font-size: 50px;
+}
+
+.link-whats {
+    font-size: 15px;
+}
+
+.titulo-cardapio h1 {
+    font-size: 50px;
+}
+
+.img-menu {
+    width: 79vh;    
+}
+
+figcaption {
+    display: none;
+}
+
+.destaque {
+    color: #fe0000;
+}
+
+.info-pedido {       
+    text-align: justify;     
+}
+
+.img-sobre {
+    height: 50vh;
+}
+
+.info-sobre {
+    font-size: 26px;    
+    text-align: justify;
+}
+
+/* FIM CARDAPIO */
+
+.imgfundo {
+    background-image: url(../img/imgroll.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.imagemroll {
+    height: 400px;
+}
+
+#contato {
+    height: 300px;
+}
+
+.tamanho-input {
+    padding: 0 200px;
+}
+
+.btn {
+    background-color: #fe0000;
+    width: 100px;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #7e0b0b;
+    color: white;
+}
+
+
+/* ----------------------------------------------small -----------------------------------*/
+
+@media (max-width: 576px) {
+    
+    .banner {
+        height: 310px;    
+        padding-top: 60px;
+    }
+
+    .img-menu {
+        width: 80%;
+        height: auto;        
+    }
+
+    .info-pedido {
+        text-align: center;
+    }
+        
+    .info-sobre {
+        font-size: 26px;
+        padding: 0 70px 20px 70px;
+        text-align: center;
+    }
+
+    .img-sobre {
+        padding-bottom: 50px;
+        width: 90%;
+        height: auto;        
+    }
+
+    .sobre {
+        flex-direction: column-reverse;
+    }
+
+    .imagemfundo {        
+        background-image: url(../img/imgroll.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: 300px;
+        height: auto;       
+    }
+
+    .pelicula {
+        position: absolute;
+        background-color: #312d2c62;        
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0; 
+    }
+   
+    .tamanho-input {
+        padding: 2px 50px;
+    }
+       
+    #contato {
+        height: 400px;
+    }
+
+    .menu-cima {
+        display: none;
+    }
+
+    .menu-baixo .infos {    
+        background-color: black;
+        display: inline-block;   
+    }
+
+    .end, .tel, .hora, .texto {
+        align-items: center;  
+        margin: auto 10px; 
+        justify-content: center; 
+        font-size: 20px;
+    } 
+
+    .midias {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 4px;
+    }
+
+    .menu-baixo .logo {
+        padding-top: 20px;
+    }
+
+    .opcoes-menu-baixo {
+        display: none;
+    }
+}
+
+
+/* Medio */
+
+@media (max-width: 768px) {
+
+     .banner {
+        height: 400px;    
+        padding-top: 60px;
+    }
+
+    .img-menu {
+        
+        width: 80%;        
+    }
+    
+    .info-pedido {
+        text-align: center;
+        padding: 0 70px 20px 70px;
+    }
+        
+    .info-sobre {
+        padding: 0 70px 20px 70px;
+        text-align: center;
+    }
+
+    .img-sobre {
+        padding-bottom: 50px;
+        width: 90%;        
+    }
+
+
+
+    .sobre {
+        flex-direction: column-reverse;
+    }
+
+    #contato {
+        height: 400px;
+    }
+    
+    .tamanho-input {
+       padding: 0 10px!important;
+    }     
+   
+    .menu-cima {
+        display: none;
+    }
+  
+    .midias {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 4px;
+    }
+    
+}
+
+
+/* large */
+
+@media (max-width:992px) {
+      
+    .infos p{
+        font-size: 18px;
+    }
+    
+    .infos-baixo p {
+        font-size: 22px ;
+    }
+
+    .info-pedido {
+       padding: 0 90px 20px 90px;
+    }  
+    
+    .img-menu {
+        width: 85%;        
+    }
+
+    .img-sobre {
+        padding-bottom: 50px;
+        width: 85%;
+        height: auto;        
+    }
+
+    .info-sobre {
+        padding: 0 90px 20px 90px;
+     } 
+
+    #contato {
+        height: 400px;
+    }
+            
+    .tamanho-input {
+       padding: 5px 10px!important;
+    }      
+      
+    .sobre {
+        flex-direction: column-reverse;
+    }
+
+    .menu-baixo .infos {    
+        background-color: black;
+        display: inline-block;   
+    }
+
+    .end, .tel, .hora, .texto {
+        align-items: center;  
+        margin: auto 10px; 
+        justify-content: center; 
+        font-size: 20px;
+    } 
+
+    .menu-baixo .logo {
+        padding-top: 20px;
+    }
+
+    .opcoes-menu-baixo {
+        display: none;
+    } 
+
+
+    .midias-cima {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .midias-cima a {
+        text-decoration: none;
+        cursor: pointer;
+        padding: 5px;                
+    }
+
+    .midias {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .midias a {
+        text-decoration: none;
+        cursor: pointer;
+        padding: 5px;                
+    }
+
+}
+
+/* Extra large */
+
+@media (min-width:1200px) {
+
+    .infos-baixo {    
+        background-color: black;
+        display: flex;     
+    }
+
+    .info-pedido {
+        padding: 0 80px;
+        font-size: 30px;
+    }
+
+    .img-sobre {
+        padding-bottom: 50px;
+        width: 85%;                        
+    }          
+
+    .menu-baixo .logo {
+        padding-top: 20px;
+    }
+
+    #contato {
+        height: 400px;
+    }
+    
+    .textoContato {
+        font-size: 50px;
+    }
+    .tamanho-input {
+        padding: 10px 100px;
+    }
+     
+    .midias-cima {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .midias-cima a {
+        text-decoration: none;
+        cursor: pointer;
+        padding: 5px;
+                
+    }
+
+    .opcoes-menu-baixo {
+        display: none;
+    }
+
+    .midias {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .midias a {
+        text-decoration: none;
+        cursor: pointer;
+        padding: 5px;                
+    }
+}
